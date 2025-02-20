@@ -6,8 +6,8 @@ import Navbar from '@/components/Navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Visual Philosophy',
-  description: 'Exploring recursive patterns in nature and mathematics',
+  title: 'Philometry',
+  description: 'Patterns of Natural Intelligence',
 };
 
 export default function RootLayout({

@@ -22,6 +22,13 @@ export default function RootLayout({
         <main className="flex-1">
           {children}
         </main>
+        <footer className="bg-white py-12 border-t">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-center text-gray-600">
+            Philometry — Patterns of Natural Intelligence
+          </p>
+        </div>
+      </footer>
       </body>
     </html>
   );

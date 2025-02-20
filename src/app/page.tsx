@@ -24,7 +24,8 @@ const examples: Example[] = [
   // Recursion Group
   {
     title: "Barnsley Fern",
-    description: "Explore how simple recursive rules create complex natural patterns through the famous Barnsley Fern visualization.",
+    description:
+      "Explore how simple recursive rules create complex natural patterns through the famous Barnsley Fern visualization.",
     path: "/recursion/barnsley-fern",
     category: "Natural Patterns",
     group: "Recursion",
@@ -32,7 +33,8 @@ const examples: Example[] = [
   },
   {
     title: "Binary Tree",
-    description: "Visualize branching patterns and understand recursive growth through an interactive tree generator.",
+    description:
+      "Visualize branching patterns and understand recursive growth through an interactive tree generator.",
     path: "/recursion/binary-tree",
     category: "Computer Science",
     group: "Recursion",
@@ -40,7 +42,8 @@ const examples: Example[] = [
   },
   {
     title: "Koch Snowflake",
-    description: "Generate infinite perimeter in finite area through recursive pattern formation.",
+    description:
+      "Generate infinite perimeter in finite area through recursive pattern formation.",
     path: "/recursion/koch-snowflake",
     category: "Mathematical Patterns",
     group: "Recursion",
@@ -189,142 +192,190 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <svg className="h-full w-full opacity-10" viewBox="0 0 100 100">
-            <pattern
-              id="grid"
-              width="10"
-              height="10"
-              patternUnits="userSpaceOnUse"
-            >
-              <path
-                d="M 10 0 L 0 0 0 10"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="0.5"
-              />
-            </pattern>
-            <rect width="100" height="100" fill="url(#grid)" />
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-white via-blue-50 to-white">
+        {/* Animated background pattern */}
+        <div className="absolute inset-0 z-0 opacity-10">
+          <div className="absolute inset-0 pattern-dots pattern-blue-500 pattern-bg-white pattern-size-4 pattern-opacity-10" />
+          <svg className="absolute w-full h-full" viewBox="0 0 100 100">
+            <circle
+              cx="50"
+              cy="50"
+              r="30"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="0.1"
+            />
+            <circle
+              cx="50"
+              cy="50"
+              r="20"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="0.1"
+            />
+            <path
+              d="M50,20 L50,80 M20,50 L80,50"
+              stroke="currentColor"
+              strokeWidth="0.1"
+            />
           </svg>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Visual Philosophy
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mb-8">
-            Exploring the hidden patterns that connect mathematics, nature, and
-            human consciousness. Through interactive visualizations, we reveal
-            the recursive beauty that underlies reality.
-          </p>
-          <div className="flex gap-4">
-            <Link
-              href="#examples"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Explore Examples
-            </Link>
-            <Link
-              href="#about"
-              className="bg-white text-blue-600 px-6 py-3 rounded-lg border border-blue-600 hover:bg-blue-50 transition-colors"
-            >
-              Learn More
-            </Link>
+          <div className="max-w-3xl">
+            <h1 className="text-6xl font-light text-gray-900 mb-8 leading-tight">
+              Patterns of
+              <span className="block font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+                Natural Intelligence
+              </span>
+            </h1>
+            <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+              Journey through the hidden geometries that shape our universe.
+              Discover how mathematics, nature, and consciousness interweave to
+              create the fabric of reality.
+            </p>
+            <div className="flex gap-6">
+              <Link
+                href="#examples"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg hover:opacity-90 transition-all shadow-lg hover:shadow-xl"
+              >
+                Begin Exploration
+              </Link>
+              <Link
+                href="#about"
+                className="bg-white text-gray-800 px-8 py-4 rounded-lg border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all"
+              >
+                Our Philosophy
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      {/* About Section - More engaging and visual */}
+      <section id="about" className="py-32 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Understanding Through Visualization
-            </h2>
-            <p className="text-gray-600 mb-4">
-              Our world is built on patterns that repeat at different scales,
-              from the spirals of galaxies to the structure of seashells.
-              Through interactive visualizations, we explore these universal
-              patterns and their deeper philosophical implications.
-            </p>
-            <p className="text-gray-600">
-              Each example is carefully crafted to reveal the mathematical
-              principles that govern natural phenomena, while encouraging
-              contemplation of the deeper meanings these patterns suggest about
-              the nature of reality itself.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-8">
+                Understanding Through
+                <span className="block text-blue-600">Visual Harmony</span>
+              </h2>
+              <div className="space-y-6">
+                <p className="text-lg text-gray-600">
+                  From the spiral of galaxies to the geometric precision of a
+                  snowflake, nature speaks to us through patterns. These
+                  patterns aren&apos;t just beautiful—they&apos;re the language of the
+                  universe itself.
+                </p>
+                <p className="text-lg text-gray-600">
+                  Our interactive visualizations reveal these hidden
+                  connections, allowing you to explore the mathematical
+                  principles that govern natural phenomena while contemplating
+                  their deeper philosophical significance.
+                </p>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4">
+                <div className="h-48 bg-blue-100 rounded-lg p-6 flex items-center justify-center">
+                  <span className="text-blue-600 text-lg font-medium">
+                    Mathematics
+                  </span>
+                </div>
+                <div className="h-48 bg-purple-100 rounded-lg p-6 flex items-center justify-center">
+                  <span className="text-purple-600 text-lg font-medium">
+                    Philosophy
+                  </span>
+                </div>
+              </div>
+              <div className="space-y-4 pt-8">
+                <div className="h-48 bg-green-100 rounded-lg p-6 flex items-center justify-center">
+                  <span className="text-green-600 text-lg font-medium">
+                    Nature
+                  </span>
+                </div>
+                <div className="h-48 bg-yellow-100 rounded-lg p-6 flex items-center justify-center">
+                  <span className="text-yellow-600 text-lg font-medium">
+                    Consciousness
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Examples Section */}
       <section id="examples" className="py-20 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-bold text-gray-900 mb-12">
-      Interactive Examples
-    </h2>
-    
-    <div className="space-y-16"> {/* Added wrapper with vertical spacing */}
-      {Object.entries(groupedExamples).map(([group, groupExamples]) => (
-        <div key={group}>
-          <h3 className="text-2xl font-semibold text-gray-800 mb-8 flex items-center gap-2">
-            {group}
-            <span className="text-sm font-normal text-gray-500">
-              ({groupExamples.length} examples)
-            </span>
-          </h3>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr"> {/* Added auto-rows-fr */}
-            {groupExamples.map((example, index) => (
-              <Link 
-                key={index} 
-                href={example.path}
-                className="block w-full h-full" // Added full width and height
-              >
-                <Card className="flex flex-col h-full"> {/* Added flex and full height */}
-                  <CardHeader>
-                    <div className="space-y-2"> {/* Added consistent spacing */}
-                      <CardTitle className="text-xl font-semibold">
-                        {example.title}
-                      </CardTitle>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
-                          {example.category}
-                        </span>
-                        <span className={`px-3 py-1 rounded-full text-xs ${
-                          example.difficulty === 'Beginner' ? 'bg-green-100 text-green-800' :
-                          example.difficulty === 'Intermediate' ? 'bg-yellow-100 text-yellow-800' :
-                          'bg-red-100 text-red-800'
-                        }`}>
-                          {example.difficulty}
-                        </span>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="flex-grow"> {/* Added flex-grow */}
-                    <p className="text-gray-600">
-                      {example.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </Link>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">
+            Interactive Examples
+          </h2>
+
+          <div className="space-y-16">
+            {" "}
+            {/* Added wrapper with vertical spacing */}
+            {Object.entries(groupedExamples).map(([group, groupExamples]) => (
+              <div key={group}>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-8 flex items-center gap-2">
+                  {group}
+                  <span className="text-sm font-normal text-gray-500">
+                    ({groupExamples.length} examples)
+                  </span>
+                </h3>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+                  {" "}
+                  {/* Added auto-rows-fr */}
+                  {groupExamples.map((example, index) => (
+                    <Link
+                      key={index}
+                      href={example.path}
+                      className="block w-full h-full" // Added full width and height
+                    >
+                      <Card className="flex flex-col h-full">
+                        {" "}
+                        {/* Added flex and full height */}
+                        <CardHeader>
+                          <div className="space-y-2">
+                            {" "}
+                            {/* Added consistent spacing */}
+                            <CardTitle className="text-xl font-semibold">
+                              {example.title}
+                            </CardTitle>
+                            <div className="flex flex-wrap gap-2">
+                              <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">
+                                {example.category}
+                              </span>
+                              <span
+                                className={`px-3 py-1 rounded-full text-xs ${
+                                  example.difficulty === "Beginner"
+                                    ? "bg-green-100 text-green-800"
+                                    : example.difficulty === "Intermediate"
+                                    ? "bg-yellow-100 text-yellow-800"
+                                    : "bg-red-100 text-red-800"
+                                }`}
+                              >
+                                {example.difficulty}
+                              </span>
+                            </div>
+                          </div>
+                        </CardHeader>
+                        <CardContent className="flex-grow">
+                          {" "}
+                          {/* Added flex-grow */}
+                          <p className="text-gray-600">{example.description}</p>
+                        </CardContent>
+                      </Card>
+                    </Link>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-      {/* Footer */}
-      <footer className="bg-white py-12 border-t">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-600">
-            Visual Philosophy — Exploring the patterns that connect everything
-          </p>
-        </div>
-      </footer>
+      </section>
     </div>
   );
 }

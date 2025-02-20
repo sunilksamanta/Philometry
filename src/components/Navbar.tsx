@@ -15,7 +15,7 @@ export default function Navbar() {
               href="/" 
               className="text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
-              Visual Philosophy
+              Philometry
             </Link>
           </div>
           

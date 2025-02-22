@@ -11,7 +11,8 @@ interface Example {
     | "Fractals"
     | "Sacred Geometry"
     | "Golden Ratio"
-    | "Nature Patterns";
+    | "Nature Patterns"
+    | "Topology & Dimensions";
   difficulty: "Beginner" | "Intermediate" | "Advanced";
 }
 
@@ -57,6 +58,40 @@ const examples: Example[] = [
   //   group: "Recursion",
   //   difficulty: "Advanced",
   // },
+
+  // Topology & Dimensions Group
+{
+  title: "Möbius Strip",
+  description: "Explore non-orientable surfaces and the concept of infinity through this one-sided mathematical wonder.",
+  path: "/topology/mobius-strip",
+  category: "Non-orientable Surfaces",
+  group: "Topology & Dimensions",
+  difficulty: "Intermediate",
+},
+{
+  title: "Klein Bottle",
+  description: "Visualize a 4D object that has no inside or outside, challenging our perception of boundaries.",
+  path: "/topology/klein-bottle",
+  category: "4D Mathematics",
+  group: "Topology & Dimensions",
+  difficulty: "Advanced",
+},
+// {
+//   title: "Torus Transformations",
+//   description: "Understand how shapes can be continuously deformed while preserving their topological properties.",
+//   path: "/topology/torus",
+//   category: "Topological Transformations",
+//   group: "Topology & Dimensions",
+//   difficulty: "Intermediate",
+// },
+// {
+//   title: "Hypercube",
+//   description: "Explore the fourth dimension through projections of a 4D cube.",
+//   path: "/topology/hypercube",
+//   category: "4D Mathematics",
+//   group: "Topology & Dimensions",
+//   difficulty: "Advanced",
+// }
 
   // Fractals Group
   // {

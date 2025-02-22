@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { AboutSection } from "@/components/About";
 
 interface Example {
   title: string;
@@ -288,58 +289,7 @@ export default function Home() {
       </section>
 
       {/* About Section - More engaging and visual */}
-      <section id="about" className="py-32 bg-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">
-                Understanding Through
-                <span className="block text-blue-600">Visual Harmony</span>
-              </h2>
-              <div className="space-y-6">
-                <p className="text-lg text-gray-600">
-                  From the spiral of galaxies to the geometric precision of a
-                  snowflake, nature speaks to us through patterns. These
-                  patterns aren&apos;t just beautiful—they&apos;re the language of the
-                  universe itself.
-                </p>
-                <p className="text-lg text-gray-600">
-                  Our interactive visualizations reveal these hidden
-                  connections, allowing you to explore the mathematical
-                  principles that govern natural phenomena while contemplating
-                  their deeper philosophical significance.
-                </p>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="h-48 bg-blue-100 rounded-lg p-6 flex items-center justify-center">
-                  <span className="text-blue-600 text-lg font-medium">
-                    Mathematics
-                  </span>
-                </div>
-                <div className="h-48 bg-purple-100 rounded-lg p-6 flex items-center justify-center">
-                  <span className="text-purple-600 text-lg font-medium">
-                    Philosophy
-                  </span>
-                </div>
-              </div>
-              <div className="space-y-4 pt-8">
-                <div className="h-48 bg-green-100 rounded-lg p-6 flex items-center justify-center">
-                  <span className="text-green-600 text-lg font-medium">
-                    Nature
-                  </span>
-                </div>
-                <div className="h-48 bg-yellow-100 rounded-lg p-6 flex items-center justify-center">
-                  <span className="text-yellow-600 text-lg font-medium">
-                    Consciousness
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AboutSection />
 
       {/* Examples Section */}
       <section id="examples" className="py-20 bg-gray-50">
